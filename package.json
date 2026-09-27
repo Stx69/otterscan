@@ -115,10 +115,12 @@
     "@rollup/rollup-linux-x64-gnu": "^4.52.5"
   },
   "overrides": {
-    "storybook": "$storybook",
+    "storybook": "9.1.19",
     "react-helmet-async": {
       "react": "^19.0.0",
       "react-dom": "^19.0.0"
-    }
+    },
+    "vite": "7.3.5",
+    "react-router": "7.18.0"
   }
 }
