@@ -1,12 +1,12 @@
-onlyBuiltDependencies:
-  - '@swc/core'
-  - '@tailwindcss/oxide'
-  - cbor-extract
-  - cypress
-  - esbuild
-  - sharp
-  - unrs-resolver
-  - workerd
+allowBuilds:
+  '@swc/core': true
+  '@tailwindcss/oxide': true
+  cbor-extract: true
+  cypress: true
+  esbuild: true
+  sharp: true
+  unrs-resolver: true
+  workerd: true
 
 overrides:
   elliptic: npm:@mapped/elliptic@6.6.9
@@ -92,5 +92,7 @@ overrides:
   ws@>=8.0.0 <8.21.0: '8.21.0'
 
 sideEffectsCache: false
+confirmModulesPurge: false
+engineStrict: true
 
 strictDepBuilds: true
